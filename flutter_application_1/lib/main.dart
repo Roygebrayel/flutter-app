@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,37 +11,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // ignore: prefer_const_constructors
     return MaterialApp(
       title: 'Flutter Demo',
-      home:soso(),
+      home:const homeWidget(),
     );
   }
 }
 
-class Homescreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    
-    return Text("hello world");
-  }
-}
-
-class soso extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(children: [
-        Container(
-          height: 300,
-          width: 200,
-          color: Colors.blue,
-        ),
-         Container(
-          height: 150,
-          width: 200,
-          color: Colors.red,
-        )
-      ]),
-    );
-  }
-}
